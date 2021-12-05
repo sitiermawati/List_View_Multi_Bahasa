@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fixed"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginBottom="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siti Ermawati"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bacgroud_ikon"
+            android:onClick="Move"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ikon_hijab" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:background="@drawable/backgroud_latar"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:background="@drawable/backgroud_latar"
+            android:backgroundTint="#D9DEFC"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_margin="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginBottom="20dp"
+                android:text="Types Of Animals"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/backgroud_latar"
+            android:backgroundTint="#D9DEFC"
+            android:layout_width="340dp"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="@drawable/backgroud_latar"
+                android:backgroundTint="#ffffff"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/ras_tiger"
+                    android:background="@drawable/background_gambar"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="4dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/tiger"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Tiger"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/backgroud_latar"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:background="@drawable/background_gambar"
+                    android:id="@+id/ras_lion"
+                    android:padding="10dp"
+                    android:layout_margin="4dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/lion"
+                    android:scaleType="fitCenter"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lion"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+
+           <LinearLayout
+               android:background="@drawable/backgroud_latar"
+               android:gravity="center"
+               android:layout_width="100dp"
+               android:layout_height="110dp"
+               android:orientation="vertical">
+               <ImageButton
+                   android:background="@drawable/background_gambar"
+                   android:id="@+id/ras_elephant"
+                   android:padding="10dp"
+                   android:layout_margin="4dp"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/gajah"
+                   android:scaleType="fitCenter"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Elephant"
+                   android:textSize="15dp"
+                   android:textStyle="bold"
+                   android:layout_marginBottom="10dp"
+                   />
+           </LinearLayout>
+        </LinearLayout>
+
+
+    //Statement Ikon Animals
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Click a picture to open a gallery)"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_marginBottom="32dp"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="copyright &#169; 2021 Ema_Secret"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        />
+
+</LinearLayout>
